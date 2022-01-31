@@ -8,26 +8,28 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	  
 	<style>
-		h3 {
-			font-size: 25px;
-		}
+        h3 {
+            font-size: 26px;
+        }
 	</style>
   </head>
 	
   <body>
 	<h1 style="padding: 7%;">Week 2 Assignment</h1>
 	
-	<div class="farbackground" id="bodyishpadding">
-		
-		<div class="navbar navbar-brand">
-			<a href="https://bluecolty.github.io/intro-to-web-dev/">Home</a>
-			<a href="https://bluecolty.github.io/intro-to-web-dev/week-01-html/index.html">Week 1</a>
+	<div class="farbackground">
+        
+    <div class="bodybackground">
+        <div class="navbar navbar-brand">
+			<a href="https://bluecolty.github.io/intro-to-web-dev/" class="navbackground">Home</a>
+			<a href="https://bluecolty.github.io/intro-to-web-dev/week-01-html/index.html" class="navbackground">Week 1</a>
+            <a href="https://bluecolty.github.io/intro-to-web-dev/week-01-html/index.html" class="navbackground active">Week 2</a>
 		</div>
 		<hr>
 		
-		<div style="background-color: white" id="bodyishpadding">
+		<div style="background-color: white" class="bodypadding">
 			<h3>CSS Styling</h3>
-			<p>This webpage has slightly more CSS styling than the last page, which detailed only HTML tags. Also included is a navigation bar, or at least what is the beginning of one. The background is blue, while a smaller div element<xmp>< div ></div></xmp> keeps the text inside a smaller white box for easy readibility.</p>
+			<p>This webpage has slightly more CSS styling than the last page, which detailed only HTML tags. Also included is a navigation bar, or at least what is the beginning of one. The background is blue, while a smaller div element<xmp id="textsize">< div ></div></xmp> keeps the text inside a smaller white box for easy readibility.</p>
 			
 			<h3>This weeks project requirements</h3>
 			<p>This weeks assignment/project requirements needed 3 different ways to style HTML tags, including</p><br>
@@ -36,7 +38,10 @@
 					<li>The ID selector, which creates a CSS styling ID that can be added to different HTML elements/tags.</li>
 					<li>The class selector, which links a CSS class to an HTML tag.</li>
 				</ul>
+            <h3>Cascading Styles</h3>
+            <p>This paragraph has cascading styles. The body block that forms the white background does not have multiple classes, instead it uses one inline CSS block and one class to add in the paddig.</p>
 		</div>
+        </div>
 	</div>
 	
   </body>
