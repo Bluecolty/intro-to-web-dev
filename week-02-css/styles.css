@@ -1,15 +1,14 @@
-/* Element selector that gives every p element a monospace font. */
-p {
-  font-family: monospace;
+h3 {
+	font-size: 25px;
 }
 
-/* Class selector that gives elements with this class a big bold style. */
-.big {
-  font-size: large;
-  font-weight: bold;
+.farbackground {
+	background-color: #99C8F9;
 }
 
-/* ID selector that gives the element with this ID a red style. */
-#boldly {
-  color: red;
+#bodyishpadding {
+	padding-top: 2%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
