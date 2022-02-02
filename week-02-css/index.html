@@ -11,6 +11,7 @@
         h3 {
             font-size: 26px;
         }
+
 	</style>
   </head>
 	
@@ -38,8 +39,13 @@
 					<li>The ID selector, which creates a CSS styling ID that can be added to different HTML elements/tags.</li>
 					<li>The class selector, which links a CSS class to an HTML tag.</li>
 				</ul>
+            
+            <p>All of these had to be written using CSS.</p>
+            
             <h3>Cascading Styles</h3>
-            <p>This paragraph has cascading styles. The body block that forms the white background does not have multiple classes, instead it uses one inline CSS block and one class to add in the paddig.</p>
+            <p class="largetext, extrapadding">These two paragraphs have cascading styles. For the multiple background colors of this entire page, two different div elements are used to create the seperation of the blue and white background.</p>
+            
+            <p class="largetext, extrapadding" id="specificbackground">This paragraph uses an ID to specify a more precise look. The coral background color is included in the ID, along with the white text color. The padding and larger text comes from the two CSS element classes.</p>
 		</div>
         </div>
 	</div>

@@ -33,3 +33,19 @@ h3 {
 .active {
     color: black;
 }
+
+.largetext {
+    font-size: 50px;
+}
+
+.extrapadding {
+    padding: 10%;
+}
+
+#specificbackground {
+    background-color: coral;
+    color: white;
+}
+
+
+
