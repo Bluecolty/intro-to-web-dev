@@ -25,13 +25,13 @@ h3 {
 }
 
 .navbackground {
-    background-color: #616161;
+    background-color: #888888;
     padding: 5px;
     color: white;
 }
 
 .active {
-    color: black;
+    color: #5162A8;
 }
 
 .largetext {
@@ -40,12 +40,10 @@ h3 {
 
 .extrapadding {
     padding: 10%;
+    background-color: #BEBEBE;
 }
 
 #specificbackground {
     background-color: coral;
     color: white;
 }
-
-
-
