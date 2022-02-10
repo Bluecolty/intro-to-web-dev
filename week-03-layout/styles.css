@@ -1,15 +1,15 @@
 /* website layout */
 .container {
 	display: grid;
-	grid-template-columns: 33% 66%;
-	grid-template-rows : 100px 50px 100px;
-	
+	grid-template-columns: 25% 75%;
+	grid-template-rows : 25% 20 100px;
 }
 
 .backgroundimage {
-	width: auto;
-	max-width: 100%;
-	max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .backgroundbanner {
@@ -17,27 +17,72 @@
 	grid-column-end: 3;
 }
 
-.green {
+.aside {
 	grid-row-start: 2;
 	grid-row-end: 4;
-	background-color: lime;
+    grid-column-start: 1;
+    grid-column-end: 2;
+	background-color: #D7D7D7;
 }
 
-.blue { 
-	background-color: cyan;
+.body { 
+	background-color: white; 
 	grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
 }
 
-.yellow { 
-	background-color: yellow; 
+.footergrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #29abe2;
+    
+}
+
+/* text formatting */
+.navigation { 
+	background-color: #888888;
+    grid-column-start: 2;
 	grid-column-end: 3;
+    
 }
 
+.navigationtext {
+    text-align: center;
+    margin: 15px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 14px;
+    font-color: white;
+}
 
+.bodytext {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    padding: 20px;
+}
 
-/* smaller screen layout */
-@media screen and (min-width: 600px) {
+h3 {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.asidetext {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    padding: 15px;
+    font-style: oblique;
+}
+
+footer {
+    color: white;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    text-align: center;
+    
+}
+
+/* larger screen layout */
+@media screen and (min-width: 1000px) {
 	.container {
-		
+        display: grid;
+	    grid-template-columns: 15% 85%;
+	    grid-template-rows : 25% 30%px 100px;
 	}
+    
 }
