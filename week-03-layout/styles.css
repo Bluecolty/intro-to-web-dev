@@ -32,10 +32,13 @@
     grid-row-end: 6;
 }
 
+/* container for children for project requirement */
 .footergrid {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #29abe2;
+	display: flex;
+	flex-direction: column;
     
 }
 
@@ -75,6 +78,17 @@ footer {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
     text-align: center;
     
+}
+
+/* link styling */
+
+a {
+	color: white;
+	
+}
+
+a.visited {
+	color: #868686;
 }
 
 /* larger screen layout */
