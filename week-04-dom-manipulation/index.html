@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="inputs">
-      <div>Give me an adjective: <input id="adjective-one-input" /></div>
-      <button onclick="fillOutputs();">Done</button>
-    </div>
-    <div id="output">
-      The <span id="adjective-one-output"></span> fox jumped over the lazy dog.
-    </div>
-  </body>
+	<head>
+    	<title>Week 4 Assignment</title>
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+    	<script src="script.js"></script>
+  	</head>
+	
+	<body>
+		<div>
+			<h1>Week 4 Assignment</h1>
+		</div>
+		<hr>
+    	<div id="inputs" class="padding">
+			<div>
+				<p>Give a male name: <input id="adjective-one-input"/></p>
+				<p>Give a location: <input id="adjective-two-input"/></p>
+				<p>Give an "ed" verb: <input id="adjective-three-input"/></p>
+				<p>Give an item: <input id="adjective-four-input"/></p>
+				<p>Give another location: <input id="adjective-five-input"/></p>
+				<p>Give an emotion: <input id="adjective-six-input"/></p>
+				<p>Give a noun: <input id="adjective-seven-input"/></p>
+				<p>Give a noun: <input id="adjective-eight-input"/></p>
+				<p>Give an emotion: <input id="adjective-nine-input"/></p>
+			</div>
+			<button onclick="fillOutputs();">Done</button> <button onClick="deleteOutputs();">Reset</button>
+    	</div>
+		<br>
+		<hr>
+		
+		<h2>Output...</h2>
+		
+    	<div id="output" class="padding">
+      		<p>One sunny afternoon, <span id="adjective-one-output"></span> decided to go for a walk in <span id="adjective-two-output"></span> to find some peace and quiet. Suddenly, he <span id="adjective-three-output"></span>. He instantly regretted taking a walk. His <span id="adjective-four-output"></span> that he had in his hand flew away, quite literally, never to be seen again. He thought to himself, <span id="adjective-five-output"></span> sure was a weird place. This made him <span id="adjective-six-output"></span> to live there. His friend, <span id="adjective-seven-output"></span>saw him after his distress and came over to say hi. His friend had a great <span id="adjective-eight-output"></span> to talk about. As his friend was talking, he remembered he was in a Mad-Lib, which explained all the wacky word combinations. This thought gave him <span id="adjective-nine-output"></span>.</p>
+    	</div>
+	</body>
 </html>

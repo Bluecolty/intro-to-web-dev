@@ -6,3 +6,63 @@
 #adjective-one-output {
   font-weight: bold;
 }
+
+#adjective-two-output {
+  font-weight: bold;
+}
+
+#adjective-three-output {
+  font-weight: bold;
+}
+
+#adjective-four-output {
+  font-weight: bold;
+}
+
+#adjective-five-output {
+  font-weight: bold;
+}
+
+#adjective-six-output {
+  font-weight: bold;
+}
+
+#adjective-seven-output {
+  font-weight: bold;
+}
+
+#adjective-eight-output {
+  font-weight: bold;
+}
+
+#adjective-nine-output {
+  font-weight: bold;
+}
+
+button {
+	background-color: #248AF5;
+	color: white;
+	border-radius: 10px;
+	font-size: 30px;
+	width: 125px;
+	border: 4px double #FFFFFF;
+	
+}
+
+button:hover {
+	background-color: #000FBC;
+}
+
+h1, h2, p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+}
+
+h1, h2 {
+	padding: 5%;
+}
+
+.padding {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
