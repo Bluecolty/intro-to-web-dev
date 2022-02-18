@@ -88,6 +88,12 @@ function fillOutputs() {
 }
 
 function deleteOutputs() {
-	
-
+	const adjectiveOneInput = document.getElementById('adjective-one-input');
+	adjectiveOneInput.value = '';
+	const adjectiveTwoInput = document.getElementById('adjective-two-input');
+	adjectiveTwoInput.value = '';
+	const adjectiveThreeInput = document.getElementById('adjective-three-input');
+	adjectiveThreeInput.value = '';
 }
+
+
