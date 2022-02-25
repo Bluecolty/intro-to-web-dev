@@ -7,49 +7,61 @@
 	</head>
 	
 	<body>
-		<h1>Week 5 Assignment</h1>
+		<div class="navpadding">
+			<h1>Week 5 Assignment</h1>
+		</div>
+		
 		<hr>
 		
-		<h2>Take part in this fun quiz about the movie "Back to the Future"! All answers must be in lower case. Include spaces</h2>
-		<div id="question-one">
-			<h4>What is the name of the main character in the movie?</h4>
-			<input id="answer-one-input" />
-			<button onclick="submitAnswerOne();">Check</button>
-		</div>
+		<div class="bodypadding">
+			<h2>Take part in this fun quiz about the movie "Back to the Future"! All answers must be in lower case. Include spaces</h2>
+			<hr>
+			<div id="question-one">
+				<h4>1) What is the name of the main character in the movie?</h4>
+				<input id="answer-one-input"/>
+				<button onclick="submitAnswerOne();">Check</button>
+				<button id="greyed-out-button" onclick="();">Last Question</button>
+			</div>
 
-		<div id="question-two">
-			<h4>What car is used as the chassis for the time machine?</h4>
-			<input id="answer-two-input"/>
-			<button onclick="submitAnswerTwo();">Check</button>
-		</div>
-		
-		<div id="question-three">
-			<h4>What year did Marty and Doc Brown travel back to?</h4>
-			<input id="answer-three-input"/>
-			<button onclick="submitAnswerThree();">Check</button>
-		</div>
-		
-		<div id="question-four">
-			<h4>What was the name of the high school dance?</h4>
-			<input id="answer-four-input"/>
-			<button onclick="submitAnswerFour();">Check</button>
-		</div>
-		
-		<div id="question-five">
-			<h4>What was the name of the city where Back to the Future took place?</h4>
-			<input id="answer-five-input"/>
-			<button onclick="submitAnswerFive();">Check</button>
-		</div>
-		
-		<div id="question-six">
-			<h4>What was the name of Doc Brown's dog?</h4>
-			<input id="answer-six-input"/>
-			<button onclick="submitAnswerSix();">Check</button>
-		</div>
+			<div id="question-two">
+				<h4>2) What car is used as the chassis for the time machine?</h4>
+				<input id="answer-two-input"/>
+				<button onclick="submitAnswerTwo();">Check</button>
+				<button onclick="displayQuestionOne();">Last Question</button>
+			</div>
 
-		<div id="done">
-			<p>Thank you for taking my quiz!</p>
-		</div>
+			<div id="question-three">
+				<h4>3) What year did Marty and Doc Brown travel back to?</h4>
+				<input id="answer-three-input"/>
+				<button onclick="submitAnswerThree();">Check</button>
+				<button onclick="displayQuestionTwo();">Last Question</button>
+			</div>
 
+			<div id="question-four">
+				<h4>4) What was the name of the high school dance?</h4>
+				<input id="answer-four-input"/>
+				<button onclick="submitAnswerFour();">Check</button>
+				<button onclick="displayQuestionThree();">Last Question</button>
+			</div>
+
+			<div id="question-five">
+				<h4>5) What was the name of the city where Back to the Future took place?</h4>
+				<input id="answer-five-input"/>
+				<button onclick="submitAnswerFive();">Check</button>
+				<button onclick="displayQuestionFour();">Last Question</button>
+			</div>
+
+			<div id="question-six">
+				<h4>6) What was the name of Doc Brown's dog?</h4>
+				<input id="answer-six-input"/>
+				<button onclick="submitAnswerSix();">Check</button>
+				<button onclick="displayQuestionFive();">Last Question</button>
+			</div>
+
+			<div id="done">
+				<h4>You made it to the end, thanks for participating in this Back to the Future quiz!</h4>
+			</div>
+		</div>
+		
 	</body>
 </html>

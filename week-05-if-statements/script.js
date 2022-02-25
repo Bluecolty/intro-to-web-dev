@@ -37,12 +37,12 @@ function submitAnswerThree() {
   const answerThreeInput = document.getElementById('answer-three-input');
   const answerThree = answerThreeInput.value;
 
-  if(answerThree == 'delorean') {
+  if(answerThree == '1955') {
     alert("Correct, next question (3/6 complete)");
-    hide('question-two');
+    hide('question-three');
     show('question-four');
-  } else if(answerThree == 'deLorean') {
-    alert('Close, check the spelling');
+  } else if(answerThree == '1985') {
+    alert('Incorrect, that is where they came from silly goose');
   } else {
     alert('This is incorrect')
   }
@@ -54,8 +54,8 @@ function submitAnswerFour() {
 
   if(answerFour == 'enchantment under the sea dance') {
     alert("Correct, next question (4/6 complete)");
-    hide('question-two');
-    show('question-four');
+    hide('question-four');
+    show('question-five');
   } else if(answerFour == 'enchantment under the sea') {
     alert('Check spelling, and the answer is 5 words total');
   } else {
@@ -63,8 +63,65 @@ function submitAnswerFour() {
   }
 }
 
-show('done');
+function submitAnswerFive() {
+  const answerFiveInput = document.getElementById('answer-five-input');
+  const answerFive = answerFiveInput.value;
 
+  if(answerFive == 'hill valley') {
+    alert("Correct, next question (5/6 complete)");
+    hide('question-five');
+    show('question-six');
+  } else if(answerFive == 'hillvalley') {
+    alert('Check spelling or check for spaces');
+  } else {
+    alert('This is incorrect')
+  }
+}
+
+function submitAnswerSix() {
+  const answerSixInput = document.getElementById('answer-six-input');
+  const answerSix = answerSixInput.value;
+
+  if(answerSix == 'einstein') {
+    alert("Correct, next question (6/6 complete)");
+    hide('question-six');
+    show('done');
+  } else if(answerSix == 'einstien') {
+    alert('This is incorrect, check spelling');
+  } else {
+    alert('This is incorrect')
+  }
+}
+
+function displayQuestionOne() {
+	const answerOneInput = document.getElementById('answer-one-input');
+	show(`question-one`);
+	hide(`question-two`)
+}
+
+function displayQuestionTwo() {
+	const answerTwoInput = document.getElementById('answer-two-input');
+	show(`question-two`);
+	hide(`question-three`)
+}
+
+function displayQuestionThree() {
+	const answerThreeInput = document.getElementById('answer-three-input');
+	show(`question-three`);
+	hide(`question-four`)
+}
+
+function displayQuestionFour() {
+	const answerFourInput = document.getElementById('answer-four-input');
+	show(`question-four`);
+	hide(`question-five`)
+}
+
+function displayQuestionFive() {
+	const answerFiveInput = document.getElementById('answer-five-input');
+	show(`question-five`);
+	hide(`question-six`)
+}
 
 // Helper function that takes an ID and shows the element with that ID.
 function show(id) {

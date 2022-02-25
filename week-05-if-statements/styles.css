@@ -26,3 +26,50 @@
 
 /** css element styling **/
 
+h4 {
+	font-size: 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h1 {
+	font-size: 30px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h2 {
+	font-size: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+button {
+	background-color: #248AF5;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 156px;
+	border: 4px double #FFFFFF;
+}
+
+input {
+	border-radius: 10px;
+	height: 30px;
+	font-size: 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+/** general CSS **/
+.bodypadding {
+	padding-left: 5%;
+	padding-right: 5%;
+	
+}
+
+.navpadding {
+	padding: 5%;
+	background-color: #209CD8;
+	color: white;
+}
+
+#greyed-out-button {
+	background-color: gray;
+}
