@@ -48,7 +48,20 @@ function submitAnswerThree() {
   }
 }
 
+function submitAnswerFour() {
+  const answerFourInput = document.getElementById('answer-four-input');
+  const answerFour = answerFourInput.value;
 
+  if(answerFour == 'enchantment under the sea dance') {
+    alert("Correct, next question (4/6 complete)");
+    hide('question-two');
+    show('question-four');
+  } else if(answerFour == 'enchantment under the sea') {
+    alert('Check spelling, and the answer is 5 words total');
+  } else {
+    alert('This is incorrect')
+  }
+}
 
 show('done');
 
