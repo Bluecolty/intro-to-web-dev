@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Quiz</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <h1>Quiz</h1>
+	<head>
+		<title>Week 5 Assignment</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<h1>Week 5 Assignment</h1>
+		<hr>
+		
+		<h2>Take part in this fun quiz about the movie "Back to the Future"! All answers must be in lower case. Include spaces</h2>
+		<div id="question-one">
+			<h4>What is the name of the main character in the movie?</h4>
+			<input id="answer-one-input" />
+			<button onclick="submitAnswerOne();">Check</button>
+		</div>
 
-    <div id="question-one">
-      <h2>What's my favorite animal?</h2>
-      <input id="answer-one-input" />
-      <button onclick="submitAnswerOne();">Done</button>
-    </div>
+		<div id="question-two">
+			<h4>What car is used as the chassis for the time machine?</h4>
+			<input id="answer-two-input"/>
+			<button onclick="submitAnswerTwo();">Check</button>
+		</div>
+		
+		<div id="question-three">
+			<h4>What year did Marty and Doc Brown travel back to?</h4>
+			<input id="answer-three-input"/>
+			<button onclick="submitAnswerThree();">Check</button>
+		</div>
+		
+		<div id="question-four">
+			<h4>What was the name of the high school dance?</h4>
+			<input id="answer-four-input"/>
+			<button onclick="submitAnswerFour();">Check</button>
+		</div>
+		
+		<div id="question-five">
+			<h4>What was the name of the city where Back to the Future took place?</h4>
+			<input id="answer-five-input"/>
+			<button onclick="submitAnswerFive();">Check</button>
+		</div>
+		
+		<div id="question-six">
+			<h4>What was the name of Doc Brown's dog?</h4>
+			<input id="answer-six-input"/>
+			<button onclick="submitAnswerSix();">Check</button>
+		</div>
 
-    <div id="question-two">
-      <h2>What's the answer to life, the universe, and everything?</h2>
-      <input id="answer-two-input" type="number" />
-      <button onclick="submitAnswerTwo();">Done</button>
-    </div>
+		<div id="done">
+			<p>Thank you for taking my quiz!</p>
+		</div>
 
-    <div id="done">
-      <p>Thank you for taking my quiz!</p>
-    </div>
-
-  </body>
+	</body>
 </html>

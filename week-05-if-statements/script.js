@@ -6,35 +6,52 @@ function submitAnswerOne() {
   // Get the text from answer one's input element
   const answerOne = answerOneInput.value;
 
-  if(answerOne == 'cat') {
-    alert("That's right!");
+  if(answerOne == 'marty mcfly') {
+    alert("Correct, next question (1/6 complete)");
     hide('question-one');
     show('question-two');
-  } else if(answerOne == 'dog') {
+  } else if(answerOne == '') {
     alert('Close, but my favorite animal runs away from dogs.');
   } else {
-    alert('Wrong! Hint: My favorite animal meows.')
+    alert('This is incorrect')
   }
 }
 
-// When this function is called, it takes the user's answer to the second
-// question and uses if statements to check whether it's correct.
+
 function submitAnswerTwo() {
-  // Get answer two's input element
   const answerTwoInput = document.getElementById('answer-two-input');
-  // Get the number from answer two's input element
   const answerTwo = answerTwoInput.value;
 
-  if(answerTwo == 42) {
-    alert("That's right!");
+  if(answerTwo == 'delorean') {
+    alert("Correct, next question (2/6 complete)");
     hide('question-two');
-    show('done');
-  } else if(answerTwo < 42) {
-    alert('The answer is higher.');
+    show('question-three');
+  } else if(answerTwo == 'deLorean') {
+    alert('Close, check the spelling');
   } else {
-    alert('The answer is lower.')
+    alert('This is incorrect')
   }
 }
+
+function submitAnswerThree() {
+  const answerThreeInput = document.getElementById('answer-three-input');
+  const answerThree = answerThreeInput.value;
+
+  if(answerThree == 'delorean') {
+    alert("Correct, next question (3/6 complete)");
+    hide('question-two');
+    show('question-four');
+  } else if(answerThree == 'deLorean') {
+    alert('Close, check the spelling');
+  } else {
+    alert('This is incorrect')
+  }
+}
+
+
+
+show('done');
+
 
 // Helper function that takes an ID and shows the element with that ID.
 function show(id) {
