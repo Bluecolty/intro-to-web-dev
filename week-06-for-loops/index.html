@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Speech</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
-  </head>
-  <body onload="displaySpeechStats()">
+	<head>
+		<title>Week 6 Assignment</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body onload="displaySpeechStats()">
+		
+		<div class="container, background">
+			<div class="body">
+				<div>
+					<h1 class="navbar">Week 6 Assignment</h1>
+				</div>
 
-    <h1>Speech Stats</h1>
+				<hr>
 
-    <p id="speech"></p>
+				<h3>Ferris Bueller's "Day Off" speech</h3>
+				<p id="speech"></p>
 
-    <h2>Long Words</h2>
-    <ul id="long-words">
-    </ul>
+				<hr>
+				<h2>Speech Analysis</h2>
 
-  </body>
+				<h3>Words that have more than 5 characters</h3>
+				<ul id="long-words"></ul>
+
+				<h3>Words with less than 4 characters</h3>
+				<ul id="short-words"></ul>
+
+				<h3>Words that start with the letter C (Colton)</h3>
+				<ul id="c-words"></ul>
+
+				<h3>The longest word AND the shortest word</h3>
+				<p>Longest Word</p>
+				<ul id="longest-word"></ul>
+				<p>Shortest Word</p>
+				<ul id="shortest-word"></ul>
+
+				<h3>Every 3rd word</h3>
+				<ul id="every-third-word"></ul>
+
+				<h3>Words that AREN'T the 10 most common words</h3>
+				<ul id="least-common-words"></ul>
+			</div>
+		</div>
+		
+	</body>
 </html>
