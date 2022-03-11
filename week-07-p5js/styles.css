@@ -1,0 +1,32 @@
+/* text formatting */
+h3, h2, h1, p, ul{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+div {
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+}
+
+.navbar {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.background {
+	background-color: #3586F3;
+}
+
+/* website layout */
+.container {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-rows: 200px;
+
+}
+
+.body {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
