@@ -1,5 +1,16 @@
-/* artboard 1 */
+var canvases = document.getElementsByTagName('canvas');
 
+for( var i=0; i<canvases.length; i++){
+     ctx = canvases[i].getContext('2d');
+
+     ctx.arc(50, 50, 50, 0, 1.5*Math.PI);
+     ctx.lineWidth = 15;
+
+     ctx.strokeStyle = 'black';
+     ctx.stroke();    
+}
+
+/* artboard 1 */
 function setup() {
   let canvas = createCanvas(400, 400);
   canvas.parent('artboard-two');
@@ -13,7 +24,6 @@ function draw() {
 }
 
 /* artboard 2 */
-
 function setup() {
     let canvas = createCanvas(400, 400);
   canvas.parent('artboard-one');
@@ -33,7 +43,6 @@ function draw() {
 }
 
 /* artboard 3 */
-
 function setup() {
     let canvas = createCanvas(400, 400);
   canvas.parent('artboard-three');
@@ -50,7 +59,6 @@ function draw() {
 }
 
 /* artboard 4 */
-
 function setup() {
     let canvas = createCanvas(400, 400);
   canvas.parent('artboard-four');
@@ -83,4 +91,33 @@ function draw(){
 }
 
 /* artboard 5 */
+function setup() {
+  let canvas = createCanvas(400, 400);
+  canvas.parent('artboard-five');
+}
 
+function draw() {
+
+  let flowerX = 150;
+  let flowerY = 150;
+  let petalSize = 100;
+  let petalDistance = petalSize / 2;
+
+  fill(255, 128, 0);
+
+  // upper-left petal
+  circle(flowerX - petalDistance, flowerY - petalDistance, petalSize);
+
+  // upper-right petal
+  circle(flowerX + petalDistance, flowerY - petalDistance, petalSize);
+
+  // lower-left petal
+  circle(flowerX - petalDistance, flowerY + petalDistance, petalSize);
+
+  // lower-right petal
+  circle(flowerX + petalDistance, flowerY + petalDistance, petalSize );
+
+  // center petal
+  fill(255, 0, 0);
+  circle(flowerX, flowerY, petalSize);
+}
