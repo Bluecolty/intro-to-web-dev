@@ -1,9 +1,16 @@
 // Array of objects representing a todo list.
 // Modify this array to contain your own list.
 const taskArray = [
-  {label: 'Water plants', time: 3},
-  {label: 'Homework', time: 2},
-  {label: 'Laundry', time: 1},
+	{game: 'BeamNG.drive', cost: 25, rating: 1},
+	{game: 'Portal 2', cost: 10, rating: 2},
+	{game: 'Teardown', cost: 20, rating: 3},
+	{game: 'Satisfactory', cost: 30, rating: 4},
+	{game: 'Microsoft Flight Simulator', cost: 60, rating: 5},
+	{game: 'Portal', cost: 10, rating: 6},
+	{game: 'Cities Skylines', cost: 30, rating: 7},
+	{game: 'Farming Simulator 2019', cost: 30, rating: 8},
+	{game: 'Forza Horizon 5', cost: 60, rating: 9},
+	{game: 'Wreckfest', cost: 30, rating: 10},
 ];
 
 // Loads the content into the page.
@@ -14,16 +21,18 @@ function loadContent() {
 
   loadTable();
   loadShortestTask();
+  loadAverage();
 }
 
 // Adds a task to the array and reloads the page content.
 function addNewTask() {
-  const newTaskLabel = document.getElementById('label-input').value;
-  const newTaskTime = document.getElementById('time-input').value;
-  const newTask = {label: newTaskLabel, time: newTaskTime };
-  taskArray.push(newTask);
+	const newTaskGame = document.getElementById('game-input').value;
+	const newTaskCost = document.getElementById('cost-input').value;
+	const newTaskRating = document.getElementById('rating-input').value;
+	const newTask = {game: newTaskGame, cost: newTaskCost, rating: newTaskRating };
+	taskArray.push(newTask);
 
-  loadContent();
+	loadContent();
 }
 
 // Iterates over the data array to create a table.
@@ -32,18 +41,20 @@ function loadTable() {
 
   // Create a header row.
   const headerRowElement = document.createElement('tr');
-  headerRowElement.appendChild(createElement('th', 'Index'));
-  headerRowElement.appendChild(createElement('th', 'Label'));
-  headerRowElement.appendChild(createElement('th', 'Time'));
-  tableElement.appendChild(headerRowElement);
+	headerRowElement.appendChild(createElement('th', 'Index'));
+	headerRowElement.appendChild(createElement('th', 'Steam Game Name'));
+	headerRowElement.appendChild(createElement('th', 'Cost of Game'));
+	headerRowElement.appendChild(createElement('th', 'Coltons Rating'));
+	tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
   for (let i = 0; i < taskArray.length; i++) {
     const task = taskArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
-    rowElement.appendChild(createElement('td', task.label));
-    rowElement.appendChild(createElement('td', task.time));
+    rowElement.appendChild(createElement('td', task.game));
+    rowElement.appendChild(createElement('td', task.cost));
+	rowElement.appendChild(createElement('td', task.rating));
     tableElement.appendChild(rowElement);
   }
 
@@ -61,11 +72,11 @@ function loadShortestTask(){
   for (let i = 1; i < taskArray.length; i++) {
     const task = taskArray[i];
     // If this task is shorter than the previous shortest, it's now the shortest
-    if(task.time < shortestTask.time) {
+    if(task.cost < shortestTask.cost) {
       shortestTask = task;
     }
   }
-  document.getElementById('shortest-task').innerText = shortestTask.label;
+  document.getElementById('cheapest-cost').innerText = cheapestCost.cost;
 }
 
 // Helper function that creates an element that contains text content.
@@ -91,3 +102,16 @@ function compare(valueOne, valueTwo) {
   // valueOne and valueTwo are equal
   return 0;
 }
+
+function loadAverage (){
+  let total = 0;
+ for(let i = 0; i < taskArray.cost; i++){
+    console.log (total)
+   const task = taskArray[i];
+    total += Number(task.cost);
+
+ }
+  let average = total / taskArray.cost;
+  console.log (average);
+  document.getElementById('average-cost').innerText = average
+  }
