@@ -8,26 +8,34 @@
 	
 	<body onload="loadContent();">
 		
-    	<h1>Week 8 Assignment</h1>
-		<hr>
-		
-		<h2>Colton's Favorite Steam Games</h2>
-    	<div id="table-container"></div>
-    		
-    		<p>Cheapest Game: <span id="cheapest-cost"></span></p>
+		<div class="body">
+			<h1>Week 8 Assignment</h1>
+			<hr>
+
+			<h2>Colton's Favorite Steam Games</h2>
+			<div id="table-container"></div>
+
+			<p><strong>Cheapest Game: </strong><span id="cheapest-game"></span></p>
+
+			<p><strong>Average Cost of All Games: </strong><span id="average-cost"></span></p>
+			<hr>
+
+			<div>
+				<h2>Add Your Favorite Game!</h2>
+				<span>Steam Game Name: <input type="text" id="game-input"/></span>
+				<br><br>
+				<span>Game Cost: <input type="number" id="cost-input"/></span>
+				<br><br>
+				<span>Your rating: <input type="number" id="rating-input"/></span>
+				<br><br>
+				<button onclick="addNewGame();">Add Game</button>
+			</div>
 			
-			<p>Average Cost of All Games: <span id="average-cost"></span></p>
-    		<hr>
-		
-		<div>
-			<h2>Add Your Favorite Game!</h2>
-			<span>Steam Game Name: <input type="text" id="label-input"/></span>
-			<br><br>
-			<span>Game Cost: <input type="number" id="time-input"/></span>
-			<br><br>
-			<span>Your rating: <input type="number" id="rating-input"/></span>
-			<br><br>
-			<button onclick="addNewTask();">Add</button>
+			<hr>
+			
+			<footer>
+				<p>JavaScript Objects, Sorting, and Averages | Week 8 Assignment | &copy; 2022</p>
+			</footer>
 		</div>
 	</body>
 </html>

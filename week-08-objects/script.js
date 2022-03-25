@@ -1,6 +1,6 @@
 // Array of objects representing a todo list.
 // Modify this array to contain your own list.
-const taskArray = [
+const gameArray = [
 	{game: 'BeamNG.drive', cost: 25, rating: 1},
 	{game: 'Portal 2', cost: 10, rating: 2},
 	{game: 'Teardown', cost: 20, rating: 3},
@@ -17,22 +17,22 @@ const taskArray = [
 function loadContent() {
   // This line of code sorts the array alphabetically by the task labels.
   // Modify this to sort your data by a different field, or just delete it.
-  taskArray.sort((a, b) => compare(a.label, b.label));
+  gameArray.sort((a, b) => compare(a.rating, b.rating));
 
   loadTable();
-  loadShortestTask();
-  loadAverage();
+  loadCheapestGame();
+  loadAverage ();
 }
 
 // Adds a task to the array and reloads the page content.
-function addNewTask() {
-	const newTaskGame = document.getElementById('game-input').value;
-	const newTaskCost = document.getElementById('cost-input').value;
-	const newTaskRating = document.getElementById('rating-input').value;
-	const newTask = {game: newTaskGame, cost: newTaskCost, rating: newTaskRating };
-	taskArray.push(newTask);
+function addNewGame() {
+  const newGameName = document.getElementById('game-input').value;
+  const newGameCost = document.getElementById('cost-input').value;
+  const newGameRating = document.getElementById('rating-input').value;
+  const addNewGame = {game: newGameName, cost: newGameCost, rating: newGameRating};
+  gameArray.push(addNewGame);
 
-	loadContent();
+  loadContent();
 }
 
 // Iterates over the data array to create a table.
@@ -41,20 +41,20 @@ function loadTable() {
 
   // Create a header row.
   const headerRowElement = document.createElement('tr');
-	headerRowElement.appendChild(createElement('th', 'Index'));
-	headerRowElement.appendChild(createElement('th', 'Steam Game Name'));
-	headerRowElement.appendChild(createElement('th', 'Cost of Game'));
-	headerRowElement.appendChild(createElement('th', 'Coltons Rating'));
-	tableElement.appendChild(headerRowElement);
+  headerRowElement.appendChild(createElement('th', 'Index'));
+  headerRowElement.appendChild(createElement('th', 'Steam Game Name'));
+  headerRowElement.appendChild(createElement('th', 'Cost of Game'));
+  headerRowElement.appendChild(createElement('th', 'Coltons Rating'));
+  tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
-  for (let i = 0; i < taskArray.length; i++) {
-    const task = taskArray[i];
+  for (let i = 0; i < gameArray.length; i++) {
+    const game = gameArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
-    rowElement.appendChild(createElement('td', task.game));
-    rowElement.appendChild(createElement('td', task.cost));
-	rowElement.appendChild(createElement('td', task.rating));
+    rowElement.appendChild(createElement('td', game.game));
+    rowElement.appendChild(createElement('td', game.cost));
+    rowElement.appendChild(createElement('td', game.rating));
     tableElement.appendChild(rowElement);
   }
 
@@ -64,20 +64,36 @@ function loadTable() {
 }
 
 // Displays the name of the shortest task.
-function loadShortestTask(){
+function loadCheapestGame(){
   // Assume the first task is shortest
-  let shortestTask = taskArray[0];
+  let CheapestGame = gameArray[0];
 
   // Starting with the second task, look for a shorter task
-  for (let i = 1; i < taskArray.length; i++) {
-    const task = taskArray[i];
+  for (let i = 0; i < gameArray.length; i++) {
+    const game = gameArray[i];
     // If this task is shorter than the previous shortest, it's now the shortest
-    if(task.cost < shortestTask.cost) {
-      shortestTask = task;
+    if(game.cost < CheapestGame.cost) {
+      CheapestGame = game;
     }
   }
-  document.getElementById('cheapest-cost').innerText = cheapestCost.cost;
+  document.getElementById('cheapest-game').innerText = CheapestGame.game;
 }
+
+// average cost of all games
+function loadAverage (){
+  let total = 0;
+ for(let i = 0; i < gameArray.length; i++){
+    console.log (total)
+   const game = gameArray[i];
+    total += Number(game.cost);
+
+ }
+  let average = total / gameArray.length;
+  console.log (average);
+  document.getElementById('average-cost').innerText = average
+  }
+  
+
 
 // Helper function that creates an element that contains text content.
 function createElement(tag, text) {
@@ -102,16 +118,3 @@ function compare(valueOne, valueTwo) {
   // valueOne and valueTwo are equal
   return 0;
 }
-
-function loadAverage (){
-  let total = 0;
- for(let i = 0; i < taskArray.cost; i++){
-    console.log (total)
-   const task = taskArray[i];
-    total += Number(task.cost);
-
- }
-  let average = total / taskArray.cost;
-  console.log (average);
-  document.getElementById('average-cost').innerText = average
-  }

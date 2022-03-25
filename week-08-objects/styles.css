@@ -9,3 +9,44 @@ h1, h2 {
 p, tr, th, span{
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
+
+th {
+	padding: 15px;
+	background-color: #48AAE9;
+	color: white;
+}
+
+.body {
+	padding-left: 10%;
+	padding-right: 10%;
+	
+}
+
+footer {
+	font-size: 12px;
+	text-align: center;
+}
+
+button {
+	position: inherit;
+    top: 50%;
+    background-color:#EC8511;
+    color: #fff;
+    border: none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+	font-size: 17px;
+}
+
+button:active {
+	background-color: #A85900;
+	border-color: #434343;
+	border-radius:10px;
+}
+
+button:hover {
+	background-color: #A85900;
+	transition: 0.4s;
+}
