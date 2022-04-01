@@ -1,8 +1,51 @@
 #images {
-  width: 500px;
-  border: thin solid black;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	border: thin solid black;
 }
 
 #images img {
-  width: 100px;
+  width: 200px;
+}
+
+#links {
+	column-count: 4;
+	
+}
+
+.farbackground {
+	background-color: #2AB2E3;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.bodybackground {
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+	
+}
+
+h1, h2 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+}
+
+li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+}
+
+.navbar {
+	padding: 5%;
+}
+
+@media screen and (min-width: 1000px) {
+	
+	.bodybackground {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+    
 }

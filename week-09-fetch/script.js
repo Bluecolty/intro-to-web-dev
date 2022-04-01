@@ -1,6 +1,6 @@
 // Loads content for a Wikipedia article and displays it in the page.
 async function loadContent() {
-  const pageId = 'Cat';
+  const pageId = 'Minecraft';
   const response = await fetch(
     'https://en.wikipedia.org/w/api.php?' +
     'action=parse&formatversion=2&format=json&origin=*&page='
@@ -21,7 +21,9 @@ async function loadContent() {
     linksElement.appendChild(liElement);
   }
 
-  loadImages(article.images);
+  	loadImages(article.images);
+	loadSections(article.sections)
+	loadSummary(article.summary)
 }
 
 // Takes an array of image file names, uses the Wikipedia API to get the full
@@ -51,4 +53,38 @@ async function loadImages(images) {
       imageElement.src = imageUrl;
       imagesContainer.appendChild(imageElement);
   }
+}
+
+async function loadSections(sections){
+  const linksElement = document.getElementById('sections');
+  for (const section of sections) {
+
+      const linkElement = document.createElement('p');
+
+      linkElement.href = 'https://en.wikipedia.org/wiki/' + sections;
+      linkElement.innerText = sections;
+
+      const liElement = document.createElement('p');
+      liElement.appendChild(linkElement);
+
+      linksElement.appendChild(liElement);
+      break;
+    }
+}
+
+async function loadSummary(summary){
+  const linksElement = document.getElementById('summary');
+  for (const summary of summary) {
+
+      const linkElement = document.createElement('p');
+
+      linkElement.href = 'https://en.wikipedia.org/wiki/' + summary;
+      linkElement.innerText = summary;
+
+      const liElement = document.createElement('p');
+      liElement.appendChild(linkElement);
+
+      linksElement.appendChild(liElement);
+      break;
+    }
 }
