@@ -47,5 +47,9 @@ li {
 		margin-right: auto;
 		
 	}
+	
+	#links {
+		column-count: 6;
+	}
     
 }

@@ -23,7 +23,7 @@ async function loadContent() {
 
   	loadImages(article.images);
 	loadSections(article.sections)
-	loadSummary(article.summary)
+	loadSummary(article)
 }
 
 // Takes an array of image file names, uses the Wikipedia API to get the full
@@ -72,19 +72,21 @@ async function loadSections(sections){
     }
 }
 
-async function loadSummary(summary){
+function loadSummary(article) {
   const linksElement = document.getElementById('summary');
-  for (const summary of summary) {
+  let summaryStart = article.text.indexOf('<i><b>Minecraft</b></i> is');
+  let summaryEnd = summaryStart + 563;
+  let summary = article.text.substring(summaryStart, summaryEnd);
+  
+	const linkElement = document.createElement('p');
 
-      const linkElement = document.createElement('p');
-
-      linkElement.href = 'https://en.wikipedia.org/wiki/' + summary;
-      linkElement.innerText = summary;
+      linkElement.href = 'summary: ' + summary;
+      linkElement.innerHTML = summary;
 
       const liElement = document.createElement('p');
       liElement.appendChild(linkElement);
 
       linksElement.appendChild(liElement);
-      break;
-    }
+	
+	
 }
