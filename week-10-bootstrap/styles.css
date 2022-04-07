@@ -1,0 +1,98 @@
+/* website layout */
+.container {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows : 25% 20 100px;
+}
+
+.backgroundimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.backgroundbanner {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.aside {
+	grid-row-start: 2;
+	grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+	background-color: #D7D7D7;
+}
+
+.body { 
+	background-color: white; 
+	grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+/* container for children for project requirement */
+.footergrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #29abe2;
+	display: flex;
+	flex-direction: column;
+    
+}
+
+/* text formatting */
+.navigation { 
+	background-color: #888888;
+    grid-column-start: 2;
+	grid-column-end: 3;
+    
+}
+
+.navigationtext {
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+    font-color: white;
+}
+
+.bodytext {
+    padding: 20px;
+}
+
+h3 {
+
+}
+
+.asidetext {
+    padding: 15px;
+    font-style: oblique;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    
+}
+
+/* link styling */
+
+a {
+	color: white;
+	
+}
+
+a.visited {
+	color: #868686;
+}
+
+/* larger screen layout */
+@media screen and (min-width: 1000px) {
+	.container {
+        display: grid;
+	    grid-template-columns: 15% 85%;
+	    grid-template-rows : 25% 30%px 100px;
+	}
+    
+}
