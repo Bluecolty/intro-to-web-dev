@@ -1,8 +1,8 @@
 /* website layout */
-.container {
-	display: grid;
-	grid-template-columns: 25% 75%;
-	grid-template-rows : 25% 20 100px;
+
+body { 
+    margin: 0%; 
+    padding: 0%;
 }
 
 .backgroundimage {
@@ -12,87 +12,89 @@
     width: 100%;
 }
 
-.backgroundbanner {
-	grid-column-start: 1;
-	grid-column-end: 3;
-}
 
 .aside {
-	grid-row-start: 2;
-	grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
 	background-color: #D7D7D7;
+	min-width: 125px;
+	
 }
 
-.body { 
-	background-color: white; 
-	grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 6;
+.footergrid{
+	background-color: #29abe2;
 }
 
-/* container for children for project requirement */
-.footergrid {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #29abe2;
-	display: flex;
-	flex-direction: column;
-    
+.navbar {
+	background-color: #989898;
+}
+
+.navigation { 
+	background-color: #888888;
+}
+
+.col, .row {
+	padding: 0%;
+	margin: 0%;
+}
+
+.nav-item {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.margins {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 80%;
+}
+
+.carosuelimage {
+	max-width: 80%;
+}
+
+.farbackground {
+	background-color: #5F5F5F;
 }
 
 /* text formatting */
-.navigation { 
-	background-color: #888888;
-    grid-column-start: 2;
-	grid-column-end: 3;
-    
-}
 
 .navigationtext {
     text-align: center;
-    margin: 15px;
     font-size: 14px;
-    font-color: white;
+    font-color: #FFFFFF;
 }
 
 .bodytext {
-    padding: 20px;
-}
-
-h3 {
-
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	min-width: 200px;
+	background-color: white
 }
 
 .asidetext {
-    padding: 15px;
     font-style: oblique;
+	padding-top: 15%;
 }
 
 footer {
     color: white;
     text-align: center;
-    
 }
 
 /* link styling */
 
 a {
 	color: white;
-	
 }
 
 a.visited {
-	color: #868686;
+	color: #424242;
 }
 
-/* larger screen layout */
-@media screen and (min-width: 1000px) {
-	.container {
-        display: grid;
-	    grid-template-columns: 15% 85%;
-	    grid-template-rows : 25% 30%px 100px;
-	}
-    
+.active {
+	color: #D4D4D4;
 }
+
+
+
+
