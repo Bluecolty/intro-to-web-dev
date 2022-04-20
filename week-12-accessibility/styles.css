@@ -1,0 +1,108 @@
+/* website layout */
+
+body { 
+    margin: 0%; 
+    padding: 0%;
+}
+
+.backgroundimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.aside {
+	background-color: #D7D7D7;
+	min-width: 125px;
+	
+}
+
+.footergrid{
+	background-color: #29abe2;
+}
+
+.navbar {
+	background-color: #838383;
+}
+
+.navigation { 
+	background-color: #888888;
+}
+
+.col, .row {
+	padding: 0%;
+	margin: 0%;
+}
+
+.nav-item {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.margins {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 80%;
+}
+
+.carosuelimage {
+	max-width: 80%;
+}
+
+.farbackground {
+	background-color: #838383;
+}
+
+/* text formatting */
+
+.navigationtext {
+    text-align: center;
+    font-size: 14px;
+    font-color: #FFFFFF;
+}
+
+.bodytext {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	min-width: 200px;
+	background-color: white
+}
+
+.asidetext {
+    font-style: oblique;
+	padding-top: 15%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: #676767;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* link styling */
+
+a {
+	color: white;
+}
+
+a.visited {
+	color: #424242;
+}
+
+.active {
+	color: #D4D4D4;
+}
+
+
+
+
