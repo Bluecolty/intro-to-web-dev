@@ -1,0 +1,90 @@
+h2 {
+    color: #1B45FE;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-style: italic;
+    font-size: large;
+    text-align: left;
+}
+
+h3 {
+    color: #1B45FE;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-style: bold;
+    font-size: x-large;
+    text-align: left;
+    font-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    font-size: small;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"   
+}
+
+li {
+    font-size: small;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+
+h1 {
+    color: white;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-style: bold;
+    font-size: x-large;
+    text-align: left;
+    font-transform: uppercase;
+    font-weight: bold; 
+}
+
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #AFD9FF;
+}
+
+#h2title {
+    color: #D3EAFF;
+}
+
+header {
+    height: 120px;
+    background-color: #2014DB;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+section {
+    margin-left: 20px;
+    float: left;
+    width: 600px;
+    
+}
+
+aside {
+    float: right;
+    width: 200px;
+    background-color: #606060;
+    color: white;
+    padding: 27px 20px 28px 20px;
+    text-align: justify;
+}
+
+footer {
+    height: 50px;
+    clear: both;
+    padding-top: 5px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: #71B3FB;
+}
+
+a.active {
+    color: #3998FF;
+}

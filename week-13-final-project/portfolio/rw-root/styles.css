@@ -1,0 +1,42 @@
+
+.bannerclass {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.bodyimage {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.heading {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row-padding {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.footer {
+    font-size: 12;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: white;
+}
+
+.farbackground {
+    background-color: #D2BC8F;
+}
