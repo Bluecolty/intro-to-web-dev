@@ -7,12 +7,13 @@
     	<title>Portfolio Contact</title>
 		<link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
 		<link href="../css/mystylesheet.css" rel="stylesheet">
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 		<script src="../js/script.js"></script>
 	</head>
 	
 	<!-- portfolio contact page -->
 	
-	<body>
+	<body onLoad="createMap();">
 		<img src="../images/background.png" class="background" alt="background"><img src="../images/background.png" class="background" alt="background">
 		
 		<div class="container">
@@ -20,8 +21,8 @@
 				<img src="../images/contact-banner.png" class="regularimage" alt="background banner">
 			</div>
 
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top row">
-				<a class="navbar-brand" href="#">Colton's Portfolio</a>
+			<nav class="navbar navbar-expand-lg navbar-dark custom-dark-navbar sticky-top row">
+				<a class="navbar-brand" href="#">CSCI 121 Final</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -43,7 +44,7 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolios</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../portfolio/index.html">AENG 252 Portfolio</a>
+								<a class="dropdown-item" href="../portfolio/index.html">CSCI 121 Portfolio</a>
 								<a class="dropdown-item" href="../woodworking/index.html">Woodworking Portfolio</a>
 								<a class="dropdown-item" href="../phonerepair/index.html">Phone Repair Portfolio</a>
 							</div>
@@ -63,7 +64,6 @@
 				<h1>Contact</h1>
 			</div>
 			
-			<hr>
 			<div class="row rowpadding">
 				<div class="col-xl-9 col-md-8 col-sm-12">
 					<p>I can be reached over several different kinds of communication.</p>
@@ -80,26 +80,71 @@
 			<div class="row rowpadding">
 				<div class="col">
 					<h3 class="centertext">Phone</h3>
-					<h5 class="centertext">717.371.2968</h5>
+					<h5 class="centertext">101.101.1001</h5>
 				</div>
 				
 				<div class="col">
 					<h3 class="centertext">Email</h3>
-					<h5 class="centertext">caesbin@millersville.edu</h5>
+					<h5 class="centertext">address@domain.com</h5>
 				</div>
 				
 				<div class="col">
 					<h3 class="centertext">Address</h3>
-					<h5 class="centertext">1135 Stoney Lane<br>Conestoga, PA 17516</h5>
+					<h5 class="centertext">1001 Address Street<br>Town, PA 17000</h5>
 				</div>
 			</div>
 			<br>
+			
+			<hr>
+			<br>
+			
+			<div class="row rowpadding">
+				<div class="col">
+					<h3>Reach out!</h3>
+					<p>Submit your information below to reach out and send me an email if you have any other questions!</p>
+					
+					<p>Name: </p>
+					<input id="name-input" placeholder="Full Name">
+					<p>Email: </p>
+					<input id="email-input" placeholder="Email Address">
+					<p>What are you contacting me about?</p>
+					<input id="contact-input" placeholder="Write a brief description" class="specialinput"><br>
+					
+					<br>
+					<button class="button2" onclick="fillOutputs();">Submit</button>
+					<br>
+					
+					<div id="output">
+						<h3>Information Submitted</h3>
+						<p><strong>Name:</strong></p>
+						<p id="name-output"></p>
+						<p><strong>Email:</strong></p>
+						<p id="email-output"></p>
+						<p><strong>Contact:</strong></p>
+						<p id="contact-output"></p>
+					</div>
+				</div>			
+			</div>
+			
+			<br>
+			<hr>
+			<br>
+			
+			<div class="row rowpadding">
+				<div class="col">
+					<h3>Location (visit this location)</h3>
+					<p>Google Maps Intergration</p>
+					
+						<div id="map"></div>
+				
+				</div>
+			</div>
 			
 			<footer class="row">
 				<div class="col">
 					<p id="largefootertext"><a href="../index.html">Home</a> | <a href="../information/index.html">Project Info</a> | <a href="#">Contact</a></p>
 					<hr>
-					<p class="regularfootertext"><a href="../portfolio/index.html">AENG 252 Portfolio</a> | <a href="../woodworking/index.html">Woodworking Portfolio</a> | <a href="../phonerepair/index.html">Phone Repair Portfolio</a></p>
+					<p class="regularfootertext"><a href="../portfolio/index.html">CSCI 121 Portfolio</a> | <a href="../woodworking/index.html">Woodworking Portfolio</a> | <a href="../phonerepair/index.html">Phone Repair Portfolio</a></p>
 					<p class="regularfootertext">&middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;</p>
 					<p id="smallfootertext">CSCI 121 Final Portfolio &copy; 2022</p>
 				</div>
